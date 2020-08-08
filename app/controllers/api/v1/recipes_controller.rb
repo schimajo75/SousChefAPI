@@ -1,17 +1,18 @@
 class Api::V1::RecipesController < ApplicationController
   def index
     recipes = Recipe.all
-    render json: recipes, include: [:notes]
+    render json: recipes
   end
 
   def show
     recipe = Recipe.find(params[:id])
-    render json: recipe, include: [:notes]
+    render json: recipe
+    # render json: recipe, include: [:notes, :recipe_lists]
   end
 
   def create
     recipe = Recipe.create(recipes_params)
-    render json: recipe, include: [:notes]
+    render json: recipe
   end
 
   def update
