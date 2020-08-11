@@ -10,48 +10,127 @@ User.create(name: 'John', email: 'john@john.com', password_digest: '123')
 User.create(name: 'Sarah', email: 'sarah@sarah.com', password_digest: '456')
 User.create(name: 'Maus', email: 'maus@maus.com', password_digest: '789')
 
-# Recipe.create(name: 'Pepperoni Pizza', image: 'https://images.pexels.com/photos/4109085/pexels-photo-4109085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', ingredient: ['cheese', 'dough', 'tomato sauce', 'pepperoni'], step: ['1. roll out the dough', '2. spread sauce on rolled out dough', '3. sprinkle shredded cheese over sauce', '4. place an even layer of pepperoni over cheese', '5. bake for 20 minutes at 500 degrees'])
-# Note.create(user_id: 1, recipe_id: 1, entry: ["Sarah likes her crust extra crispy (a little burnt)"])
+Ingredient.create(name: "Salmon fillets")
+Ingredient.create(name: "Dijon mustard")
+Ingredient.create(name: "Salt & Pepper")
+Ingredient.create(name: "Italian-style bread crumbs")
+Ingredient.create(name: "Butter")
+Ingredient.create(name: "Walnuts")
+Ingredient.create(name: "Ravioli")
+Ingredient.create(name: "Balsamic Vinegar")
+Ingredient.create(name: "Parmesan")
+Ingredient.create(name: "Crumbled Chorizo")
+Ingredient.create(name: "Chipotle Peppers in Adobo Sauce")
+Ingredient.create(name: "Chopped Onion")
+Ingredient.create(name: "Chopped Cilantro")
+Ingredient.create(name: "Garlic")
+Ingredient.create(name: "Kosher Salt")
+Ingredient.create(name: "Top Sirloin, trimmed")
+Ingredient.create(name: "Lemon Juice")
+Ingredient.create(name: "Olive Oil")
+Ingredient.create(name: "Boneless Center-Cut Pork Loin")
+Ingredient.create(name: "Salsa")
+Ingredient.create(name: "Water")
+Ingredient.create(name: "Pork Chops")
+Ingredient.create(name: "Garlic Salt")
+Ingredient.create(name: "Fresh Mushrooms")
+Ingredient.create(name: "Condensed Cream of Mushroom Soup")
+Ingredient.create(name: "Baby Back Ribs, trimmed")
+Ingredient.create(name: "Sliced Onion")
+Ingredient.create(name: "BBQ Sauce")
+Ingredient.create(name: "Boneless, Skinless Chicken Breasts, pounded thin")
+Ingredient.create(name: "Basil Pesto")
+Ingredient.create(name: "Mozzarella Cheese, sliced thick")
+Ingredient.create(name: "Cooking Spray")
 
-# Recipe.create(name: 'Cheeseburger', image: 'https://images.pexels.com/photos/2702674/pexels-photo-2702674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', ingredient: ['1. ground beef', '2. sliced cheese', '3. bun'], step: ['form patty from beef', 'cook one side in hot pan for 6 minutes', 'flip and place cheese on top of patty. cover and cook for another 5 minutes', 'place burger on bun', 'serve with condiments'])
-# Note.create(user_id: 1, recipe_id: 2, entry: ['Sarah likes her burger more well done.  An extra minute on each side', 'added more salt to the patties.  much improved.'])
-RecipeList.create(user_id: 1)
-RecipeList.create(user_id: 2)
-RecipeList.create(user_id: 3)
+Recipe.create(name: "Baked Salmon Fillets Dijon", image: "https://images.media-allrecipes.com/userphotos/720x405/265298.jpg", step: ["1. Preheat oven to 400 degrees F (200 degrees C). Line a shallow baking pan with aluminum foil.", 
+"2. Place salmon skin-side down on foil. Spread a thin layer of mustard on the top of each fillet, and season with salt and pepper. Top with bread crumbs, then drizzle with melted butter.",
+"3.Bake in a preheated oven for 15 minutes, or until salmon flakes easily with a fork."])
 
-3.times do
-Recipe.create(name: "Beef Stroganoff", image: "https://images.media-allrecipes.com/userphotos/720x405/453711.jpg", ingredient: ["1 (12 ounce) package egg noodles, cooked and drained", "6 ounces fresh mushrooms, sliced", "1 onion, chopped", "1/4 cup butter", "2 pounds lean ground beef", "4 tablespoons all-purpose flour", "2 cups beef broth", "1 cup sour cream", "salt and black pepper to taste"], step: ["1. Bring a large pot of water to a boil. Cook egg noodles in boiling water until done, about 8 minutes. Drain.", "2. Meanwhile, prepare the sauce. In a large skillet, cook mushrooms and onions in 2 tablespoons of butter over medium heat until soft; remove from pan.", "3. Using the same pan, melt remaining butter. Cook ground beef in melted butter until browned. Mix in flour. Stir in beef broth, and cook until slightly thickened. Add mushroom and onion mixture; stir in sour cream. Season to taste with salt and pepper. Continue cooking until sauce is hot, but not boiling. Serve sauce over egg noodles."], recipe_list_id: RecipeList.all.sample.id)
+Recipe.create(name: "Balsamic Ravioli", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5371338.jpg&w=873&h=584&c=sc&poi=face&q=85", step: ["1. Toast walnuts in a skillet over medium heat; cook and stir until browned and fragrant, 8 to 10 minutes. Remove from skillet.", 
+"2. Fill a pot with lightly salted water and bring to a rolling boil; stir in ravioli and return to a boil. Cook uncovered, stirring occasionally, until the ravioli float to the top and the filling is hot, 3 to 5 minutes. Drain.", 
+"3. Warm butter in a skillet over medium heat until slightly brown, about 1 minute. Add balsamic vinegar; cook and stir until melted and combined, 1 to 2 minutes. Stir in ravioli; mix until combined. Top with walnuts and Parmesan cheese."])
 
-Recipe.create(name: "Carne Asada Tacos", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F903574.jpg&w=596&h=399&c=sc&poi=face&q=85", ingredient: ["1 ½ pounds boneless beef top sirloin, cut into thin bite-size slices", "½ teaspoon salt", "1 teaspoon freshly ground black pepper", "crushed red pepper to taste", "1 lime", "1 (28 ounce) can tomatillos", "2 peppers fresh jalapeno peppers, seeded", "4 tablespoons canola oil, divided", "1 (10.5 ounce) can beef broth", "12 (6 inch) corn tortillas", "½ large onion, chopped", "2 medium whole tomatoes, chopped", "1 avocado - peeled, pitted and sliced", "1 bunch fresh cilantro, chopped", "1 lemon"], step: ["1. Place sliced meat into a shallow bowl, and season with salt, black pepper, and crushed red pepper. Squeeze the lime juice over the meat, and turn until evenly coated. Cover, and refrigerate for 30 minutes.", "2. In a blender or food processor, combine tomatillo and jalapeno. Puree for 15 to 20 seconds, or until thick. Heat 1 tablespoon oil in a large skillet over medium high heat. Carefully pour in tomatillo mixture. Cook, stirring frequently, for 5 minutes. Stir in beef broth. Reduce heat, and simmer for 20 to 30 minutes, or until mixture coats a spoon. Transfer mixture to a serving dish.", "3. Heat tablespoon oil in a large skillet over high heat. Stir in 1/3 of the beef, and saute for 1 minute. Transfer to serving dish. Repeat with remaining beef. Meanwhile, heat tortillas in the oven or microwave, according to package instructions.", "4. To serve, place two tortillas on top of each other. Add desired amount of meat, spoon over some tomatillo mixture. Top with onions, tomatoes, avocado and cilantro. Garnish with a wedge of lemon, to be squeezed over taco before eating."], recipe_list_id: RecipeList.all.sample.id)
+Recipe.create(name: "Easy Chorizo Street Tacos", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5406922.jpg&w=858&h=858&c=sc&poi=face&q=85", step: ["1. Mix chorizo and chipotle peppers in adobo sauce together in a bowl.",
+"2. Heat a skillet over medium-high heat; add chorizo mixture and cook until crisp, 5 to 7 minutes. Transfer chorizo to a plate, reserving grease in the skillet.",
+"3. Heat tortillas in the reserved grease in skillet over medium heat until warmed, 1 to 2 minutes per side. Stack 2 tortillas on top of each other for each taco. Fill with chorizo, onion, and cilantro."])
 
-Recipe.create(name: "Classic Spicy Meatloaf", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2258521.jpg&w=596&h=399&c=sc&poi=face&q=85", ingredient: ["2 tablespoons unsalted butter", "1 cup finely chopped onion", "½ cup finely chopped green onions", "1 carrot, finely chopped", "1 rib celery, finely chopped", "1 tablespoon minced garlic", "⅔ cup ketchup, divided", "2 teaspoons Worcestershire sauce", "2 teaspoons salt", "1 ½ teaspoons ground black pepper", "1 ½ pounds ground beef", "¾ pound spicy ground pork sausage", "1 cup bread crumbs", "⅓ cup minced fresh parsley", "2 large eggs, slightly beaten"], step: ["1. Preheat oven to 350 degrees F (175 degrees C).", "2. Heat butter in a large heavy skillet over medium heat; cook and stir onion, green onions, carrot, celery, and garlic until fragrant, about 5 minutes. Cover skillet with a lid and cook, stirring occasionally, until carrot is tender, about 5 more minutes. Stir 1/3 cup ketchup, Worcestershire sauce, salt, and pepper into vegetable mixture; cook until warmed through, about 1 minute.", "3. Mix ground beef, sausage, vegetable mixture, bread crumbs, parsley, and eggs in a large bowl; form into a loaf and place in a rectangular baking pan with 2-inch high sides. Cover loaf with remaining 1/3 cup ketchup.", "4. Bake in the preheated oven until no longer pink in the center, about 1 hour. An instant-read thermometer inserted into the center should read at least 160 degrees F (70 degrees C)."], recipe_list_id: RecipeList.all.sample.id)
+Recipe.create(name: "Churrascaria-Style Picanha", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3786551.jpg&w=873&h=584&c=sc&poi=face&q=85", step: ["1. Mix crushed garlic and salt together in a bowl until combined into a paste.",
+"2. Rub garlic paste onto meat until covered. Place into a bowl; cover with lemon juice. Marinate until the meat has absorbed desired flavor, 30 minutes to 4 hours. Remove meat from the lemon juice. Baste with olive oil.",
+"3. Preheat an outdoor grill for high heat and lightly oil the grate.",
+"4. Cook meat on the preheated grill, turning frequently until the outer edges are charred and center is uncooked, about 5 minutes. Remove from heat; slice off charred edges, cutting against the grain. Return the uncooked center portion of the meat back to the grill. Cook until the meat begins to firm and is hot and slightly pink in the center, about 5 minutes per side. An instant-read thermometer inserted into the center should read 140 degrees F (60 degrees C)."])
 
-Recipe.create(name: "Mac and Cheese", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F353806.jpg&w=596&h=596&c=sc&poi=face&q=85", ingredient: ["1 ½ cups macaroni", "6 ounces processed cheese, shredded", "½ cup shredded Cheddar cheese", "2 tablespoons heavy cream", "salt to taste"], step: ["1. Bring a large pot of lightly salted water to a boil. Add pasta and cook for 8 to 10 minutes or until al dente; drain.", "2. Return drained pasta to the pot. Mix in processed cheese, Cheddar cheese, and cream. Stir until cheeses melt. Sprinkle with salt."], recipe_list_id: RecipeList.all.sample.id)
+Recipe.create(name: "Slow Cooker Pulled Pork", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3973755.jpg&w=873&h=584&c=sc&poi=face&q=85", step: ["1. Place pork loin, salsa, and chipotle peppers in a slow cooker. Pour in enough water to cover the pork halfway.",
+"2. Cook on High until pork is very tender, 4 to 5 hours.",
+"3. Transfer to a cutting board; shred with a fork and knife."])
 
-Recipe.create(name: "Eggplant Lasagna", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4416814.jpg&w=596&h=792&c=sc&poi=face&q=85", ingredient: ["1 large eggplant, peeled and cut into 1/4-inch slices", "1 pinch salt to taste", "2 tablespoons olive oil, or as needed", "1 (16 ounce) container ricotta cheese", "2 cups shredded Italian cheese blend", "1 egg", "2 cloves garlic, minced", "2 sprigs fresh oregano, chopped", "3 sprigs fresh thyme, chopped", "10 grinds fresh black pepper", "2 ½ cups tomato sauce", "1 (10 ounce) package frozen chopped spinach, thawed and drained", "6 slices part-skim mozzarella cheese"], step: ["1. Place eggplant slices on a wire rack; sprinkle with salt. Let sit until some liquid starts beading on slices, about 20 minutes. Rinse salt off eggplant slices and pat dry. Brush olive oil over both sides of each slice. Arrange eggplant slices on a baking sheet.", "3. Roast in the preheated oven for 10 to 15 minutes. Flip eggplant slices and continue roasting until slices are tender and lightly browned, 15 to 20 more minutes. Remove eggplant from oven and reduce temperature to 350 degrees F (175 degrees C).", "4. Mix ricotta cheese, Italian cheese blend, egg, garlic, oregano, thyme, and black pepper together in a bowl.", "5. Line a 9-inch square pan with aluminum foil. Coat the bottom of the pan with about 1/2 cup tomato sauce; top with 1/2 of the eggplant slices. Layer eggplant slices with 1/2 of the spinach, 1/2 of the ricotta mixture, and 1/2 of the remaining tomato sauce. Continue layering with remaining ingredients, ending with sauce. Top with mozzarella slices. Cover pan with aluminum foil.", "6. Bake in the preheated oven for 30 minutes. Remove aluminum foil and continue baking until cheese is brown and bubbling, 5 to 10 more minutes."], recipe_list_id: RecipeList.all.sample.id)
+Recipe.create(name: "Mushroom Pork Chops", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3889134.jpg&w=266&h=353&c=sc&poi=face&q=85", step: ["1. Season pork chops with salt, pepper, and garlic salt to taste.",
+"2. In a large skillet, brown the chops over medium-high heat. Add the onion and mushrooms, and saute for one minute. Pour cream of mushroom soup over chops. Cover skillet, and reduce temperature to medium-low. Simmer 20 to 30 minutes, or until chops are cooked through."])
 
-Recipe.create(name: "Shrimp Scampi", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F8367256.jpg&q=85", ingredient: ["½ (16 ounce) package linguine pasta", "4 tablespoons butter", "2 cloves garlic, minced", "1 pound jumbo shrimp, peeled and deveined", "2 tablespoons Pinot Grigio wine", "2 teaspoons lemon juice, or to taste", "½ cup half-and-half", "¼ cup finely shredded Parmesan cheese", "2 tablespoons chopped fresh parsley, or to taste"], step: ["1. Bring a large pot of lightly salted water to a boil. Cook linguine at a boil until tender yet firm to the bite, about 8 minutes.", "2. While pasta cooks, melt 2 tablespoons butter in a skillet over medium heat. Add garlic and cook until fragrant and lightly browned, about 1 minute. Add shrimp and cook until tails start curling in, about 2 minutes per side. Add remaining butter, Pinot Grigio, lemon juice, half-and-half, and Parmesan cheese. Stir to incorporate.", "3. Drain linguine and divide noodles between 2 bowls. Serve shrimp mixture on top and garnish with parsley."], recipe_list_id: RecipeList.all.sample.id)
+Recipe.create(name: "Slow Cooker Baby Back Ribs", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1213825.jpg&w=286&h=286&c=sc&poi=face&q=85", step: ["1. Season ribs with salt and pepper.",
+"2. Pour water into slow cooker. Layer the ribs into the slow cooker. Top the ribs with onion and garlic.",
+"3. Cook on High for 4 hours (or Low for 8 hours).",
+"4. Preheat oven to 375 degrees F (190 degrees C).",
+"5. Transfer ribs to a baking sheet. Discard onion and garlic. Coat ribs with barbeque sauce.",
+"6. Bake in preheated oven until the sauce caramelizes and sticks to the meat, 10 to 15 minutes."])
 
-Recipe.create(name: "Salmon Burger", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2023895.jpg&w=596&h=792&c=sc&poi=face&q=85", ingredient: ["1 ½ pounds salmon fillet, cut into chunks", "⅓ cup chopped fresh parsley", "2 tablespoons dry bread crumbs", "2 tablespoons chopped green onion", "2 teaspoons seafood seasoning", "1 lemon, juiced", "1 pinch salt and ground black pepper to taste", "1 tablespoon olive oil"], step: ["1. Place salmon chunks, parsley, bread crumbs, green onion, seafood seasoning, lemon juice, salt, and black pepper in a food processor. Pulse until salmon is chopped. Shape salmon mixture into four patties.", "2. Heat olive oil in a large skillet over medium-high heat. Pan-fry patties until golden brown, about 4 minutes per side."], recipe_list_id: RecipeList.all.sample.id)
-
-Recipe.create(name: "Three Bean Casserole", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5869632.jpg&w=596&h=792&c=sc&poi=face&q=85", ingredient: ["½ pound bacon", "1 pound ground beef", "1 onion, chopped", "½ cup ketchup", "¾ cup brown sugar", "1 tablespoon vinegar", "1 teaspoon dry mustard", "1 (16 ounce) can baked beans", "1 (15.25 ounce) can kidney beans", "1 (15 ounce) can butter beans"], step: ["1. Place bacon in a large, deep skillet. Cook over medium high heat until evenly brown. Drain, break into medium pieces and set aside. In same skillet, brown beef and onion. Drain fat.",
-"2. Preheat oven to 350 degrees F (175 degrees C).", "3. Place bacon/beef mixture in a large bowl and stir in the ketchup, sugar, vinegar, mustard, baked beans, kidney beans (with liquid) and butter beans (with liquid). Mix well.", "4. Spoon casserole mixture into a 9x13 inch baking dish and bake in the preheated oven for 1 hour, uncovered."], recipe_list_id: RecipeList.all.sample.id)
-
-Recipe.create(name: "Pork Ramen", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4465714.jpg&w=596&h=792&c=sc&poi=face&q=85", ingredient: ["1 egg", "1 ½ teaspoons spicy sesame oil", "2 eaches (1x3-inch) boneless pork chop slices", "2 tablespoons olive oil, divided", "1 tablespoon black sesame seeds, divided", "2 leaves fresh basil, chopped, divided", "1 leaf fresh sage, chopped, divided", "1 (3 ounce) package instant ramen noodles (such as Shirakiku®), seasoning packet discarded", "3 tablespoons shredded dried kombu", "1 ¾ tablespoons bonito soup stock (such as Hondashi®)", "1 ¾ tablespoons soy sauce (shoyu)", "½ teaspoon white miso paste with dashi"], step: ["1. Fill a small pot halfway with water. Bring to a boil; add egg and cook for 15 minutes. Drain. Run cold water over egg and let cool.", "2. Pour sesame oil into a large skillet. Add pork slices. Cover pork with half the olive oil, sesame seeds, basil, and sage. Flip and cover pork with remaining olive oil, sesame seeds, basil, and sage.", "3. Cook pork, covered, over medium-low heat, until evenly browned on the bottom, about 5 minutes. Flip and continue cooking until second side is browned, about 5 minutes more. Remove from heat.", "4. Bring a large pot of water to a boil. Add ramen noodles; cook for 3 minutes. Drain in a colander set in the sink; rinse noodles until water runs clear. Return noodles to the pot.", "5. Stir kombu, bonito stock, soy sauce, and miso paste into the noodles. Cook, stirring with chopsticks, over medium heat, until miso paste is dissolved, 3 to 5 minutes. Transfer noodles to a bowl.", "6. Peel and cut egg in half lengthwise. Top noodles with egg, pork slices, and fish paste slices. Garnish with tonkatsu sauce, ginger, green onion, and black pepper."], recipe_list_id: RecipeList.all.sample.id)
-
-Recipe.create(name: "Stuffed Cabbage", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F7556964.jpg&q=85", ingredient: ["1 head cabbage", "1 tablespoon vegetable oil", "1 onion, chopped", "2 cloves garlic, crushed", "¾ cup uncooked white rice, rinsed", "1 pound ground beef", "1 pound ground pork sausage", "1 egg, beaten", "1 (32 ounce) can tomato juice"], step: ["1. Bring a large pot of water to a boil. Cook cabbage in boiling water until outer leaves pull away easily from the head, 3 to 5 minutes. Separate leaves and let cool. Reserve 1 1/2 cup cooking water.", "2. Heat oil in a large skillet. Add onion and garlic; cook and stir until translucent, about 5 minutes. Stir in wet rice; cook and stir until moisture evaporates, about 1 minute. Remove from heat and let cool, about 5 minutes.", "3. Mix beef, sausage, and egg together in a large bowl. Stir in cooled rice mixture.", "4. Place a golfball-sized amount of the beef mixture on the ribbed end of a cabbage leaf; roll up, tucking in the sides. Repeat with remaining beef mixture and cabbage leaves.", "5. Place rolls seam-side down in a slow cooker. Cover with tomato juice. Pour reserved cooking water on top.", "6. Cook on High for 30 minutes. Switch to Low and cook for 6 1/2 hours."], recipe_list_id: RecipeList.all.sample.id)
-
-end
-
+Recipe.create(name: "Pesto Cheesy Chicken Rolls", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F570187.jpg&w=858&h=858&c=sc&poi=face&q=85", step: ["1. Preheat the oven to 350 degrees F (175 degrees C). Spray a baking dish with cooking spray.",
+"2. Spread 2 to 3 tablespoons of the pesto sauce onto each flattened chicken breast. Place one slice of cheese over the pesto. Roll up tightly, and secure with toothpicks. Place in a lightly greased baking dish.",
+"3. Bake uncovered for 45 to 50 minutes in the preheated oven, until chicken is nicely browned and juices run clear."])
 
 
-Note.create(user_id: 1, recipe_id: 1, entry: ['JOHN likes his burger more well done.  An extra minute on each side', 'added more salt to the patties.  much improved.'])
-Note.create(user_id: 1, recipe_id: 2, entry: ['JOHN likes his burger more well done.  An extra minute on each side', 'added more salt to the patties.  much improved.'])
-Note.create(user_id: 1, recipe_id: 4, entry: ['JOHN likes his burger more well done.  An extra minute on each side'])
-Note.create(user_id: 1, recipe_id: 7, entry: ['JOHN likes his burger more well done.  An extra minute on each side', 'added more salt to the patties.  much improved.', 'a dash of fish sauce added nice body'])
-Note.create(user_id: 2, recipe_id: 2, entry: ['Sarah likes her burger more well done.  An extra minute on each side'])
-Note.create(user_id: 2, recipe_id: 3, entry: ['Sarah likes her burger more well done.  An extra minute on each side'])
-Note.create(user_id: 2, recipe_id: 5, entry: ['Sarah likes her burger more well done.  An extra minute on each side'])
-Note.create(user_id: 3, recipe_id: 6, entry: ['MAUS likes her burger more well done.  An extra minute on each side', 'added more salt to the patties.  much improved.', 'a dash of fish sauce added nice body'])
-Note.create(user_id: 3, recipe_id: 7, entry: ['MAUS  likes her burger more well done.  An extra minute on each side', 'added more salt to the patties.  much improved.', 'a dash of fish sauce added nice body'])
-Note.create(user_id: 3, recipe_id: 8, entry: ['MAUS added more salt to the patties.  much improved.', 'a dash of fish sauce added nice body'])
+RecipeIngredient.create(recipe_id: 1, ingredient_id: 1, quantity: "16oz")
+RecipeIngredient.create(recipe_id: 1, ingredient_id: 2, quantity: "3 tbsn")
+RecipeIngredient.create(recipe_id: 1, ingredient_id: 3, quantity: "to taste")
+RecipeIngredient.create(recipe_id: 1, ingredient_id: 4, quantity: "1/4 cup")
+RecipeIngredient.create(recipe_id: 1, ingredient_id: 5, quantity: "1/4 cup")
+RecipeIngredient.create(recipe_id: 2, ingredient_id: 6, quantity: "1/2 cup")
+RecipeIngredient.create(recipe_id: 2, ingredient_id: 7, quantity: "25 oz")
+RecipeIngredient.create(recipe_id: 2, ingredient_id: 8, quantity: "2 tbsn")
+RecipeIngredient.create(recipe_id: 2, ingredient_id: 9, quantity: "1/4 cup")
+RecipeIngredient.create(recipe_id: 3, ingredient_id: 10, quantity: "4 oz")
+RecipeIngredient.create(recipe_id: 3, ingredient_id: 11, quantity: "2 tbsn")
+RecipeIngredient.create(recipe_id: 3, ingredient_id: 12, quantity: "2 tbsn")
+RecipeIngredient.create(recipe_id: 3, ingredient_id: 13, quantity: "2 tbsn")
+RecipeIngredient.create(recipe_id: 4, ingredient_id: 14, quantity: "3 cloves, crushed")
+RecipeIngredient.create(recipe_id: 4, ingredient_id: 15, quantity: "1 tspn")
+RecipeIngredient.create(recipe_id: 4, ingredient_id: 16, quantity: "1 lb")
+RecipeIngredient.create(recipe_id: 4, ingredient_id: 17, quantity: "1/4 cup")
+RecipeIngredient.create(recipe_id: 4, ingredient_id: 18, quantity: "1 tbsn")
+RecipeIngredient.create(recipe_id: 5, ingredient_id: 19, quantity: "2 1/2 lbs")
+RecipeIngredient.create(recipe_id: 5, ingredient_id: 20, quantity: "1/2 cup")
+RecipeIngredient.create(recipe_id: 5, ingredient_id: 21, quantity: "4 cups")
+RecipeIngredient.create(recipe_id: 5, ingredient_id: 11, quantity: "2 tbsn")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 22, quantity: "20 oz")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 3, quantity: "to taste")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 23, quantity: "to taste")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 11, quantity: "2 tbsn")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 12, quantity: "5 oz")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 24, quantity: "1/2 lb")
+RecipeIngredient.create(recipe_id: 6, ingredient_id: 25, quantity: "10.75 oz can")
+RecipeIngredient.create(recipe_id: 7, ingredient_id: 26, quantity: "3 lbs")
+RecipeIngredient.create(recipe_id: 7, ingredient_id: 3, quantity: "to taste")
+RecipeIngredient.create(recipe_id: 7, ingredient_id: 21, quantity: "1/2 cup")
+RecipeIngredient.create(recipe_id: 7, ingredient_id: 27, quantity: "2 oz")
+RecipeIngredient.create(recipe_id: 7, ingredient_id: 14, quantity: "1 clove, minced")
+RecipeIngredient.create(recipe_id: 7, ingredient_id: 28, quantity: "18 oz")
+RecipeIngredient.create(recipe_id: 8, ingredient_id: 29, quantity: "16 oz")
+RecipeIngredient.create(recipe_id: 8, ingredient_id: 30, quantity: "1 cup")
+RecipeIngredient.create(recipe_id: 8, ingredient_id: 31, quantity: "6 oz")
+RecipeIngredient.create(recipe_id: 8, ingredient_id: 32, quantity: "1 can")
+
+RecipeList.create(recipe_id: 1, user_id: 1)
+RecipeList.create(recipe_id: 2, user_id: 1)
+RecipeList.create(recipe_id: 3, user_id: 1)
+RecipeList.create(recipe_id: 4, user_id: 1)
+RecipeList.create(recipe_id: 5, user_id: 1)
+RecipeList.create(recipe_id: 8, user_id: 2)
+RecipeList.create(recipe_id: 7, user_id: 2)
+RecipeList.create(recipe_id: 6, user_id: 2)
+RecipeList.create(recipe_id: 5, user_id: 2)
+RecipeList.create(recipe_id: 4, user_id: 2)
+RecipeList.create(recipe_id: 3, user_id: 3)
+RecipeList.create(recipe_id: 4, user_id: 3)
+RecipeList.create(recipe_id: 5, user_id: 3)
+RecipeList.create(recipe_id: 6, user_id: 3)
+RecipeList.create(recipe_id: 7, user_id: 3)

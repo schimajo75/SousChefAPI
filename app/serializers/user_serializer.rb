@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :name
-  has_many :recipes
-  has_many :notes
+  attributes :id, :name, :email
+  has_many :recipe_lists
+  has_many :recipes, through: :recipe_lists
 end

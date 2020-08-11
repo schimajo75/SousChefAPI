@@ -7,7 +7,6 @@ class Api::V1::RecipesController < ApplicationController
   def show
     recipe = Recipe.find(params[:id])
     render json: recipe
-    # render json: recipe, include: [:notes, :recipe_lists]
   end
 
   def create
