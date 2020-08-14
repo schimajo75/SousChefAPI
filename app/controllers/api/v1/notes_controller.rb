@@ -27,6 +27,6 @@ class Api::V1::NotesController < ApplicationController
   private
 
   def notes_params
-    params.require(:note).permit(:entry, :user_id, :recipe_id)
+    params.require(:note).permit(:entry, :user_id, :recipe_list_id)
   end
 end
