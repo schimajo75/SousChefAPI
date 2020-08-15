@@ -42,6 +42,31 @@ Ingredient.create(name: "Boneless, Skinless Chicken Breasts, pounded thin")
 Ingredient.create(name: "Basil Pesto")
 Ingredient.create(name: "Mozzarella Cheese, sliced thick")
 Ingredient.create(name: "Cooking Spray")
+Ingredient.create(name: "Graham Crackers")
+Ingredient.create(name: "Milk Chocolate")
+Ingredient.create(name: "Mini Marshmallows")
+Ingredient.create(name: "Chocolate Ice Cream")
+Ingredient.create(name: "Jumbo craft Sticks")
+Ingredient.create(name: "Semisweet Chocolate Chips")
+Ingredient.create(name: "Coconut Oil")
+Ingredient.create(name: "Apple Pie Filling")
+Ingredient.create(name: "Cinnamon Sugar")
+Ingredient.create(name: "Flour Tortillas")
+Ingredient.create(name: "Cooking Oil")
+Ingredient.create(name: "Lemon Curd")
+Ingredient.create(name: "Frozen Mini Phylo Shells")
+Ingredient.create(name: "Frozen Whipped Topping")
+Ingredient.create(name: "Ground Cinnamon")
+Ingredient.create(name: "Frozen Puff Pastry")
+Ingredient.create(name: "Chocolate-Hazelnut Spread")
+Ingredient.create(name: "Roasted Hazelnuts")
+Ingredient.create(name: "Chickpeas")
+Ingredient.create(name: "Cream of Tartar")
+Ingredient.create(name: "White Sugar")
+Ingredient.create(name: "Vanilla Extract")
+Ingredient.create(name: "Egg Whites")
+Ingredient.create(name: "Confectioners' Sugar")
+Ingredient.create(name: "Almonds")
 
 Recipe.create(name: "Baked Salmon Fillets Dijon", image: "https://images.media-allrecipes.com/userphotos/720x405/265298.jpg", step: ["1. Preheat oven to 400 degrees F (200 degrees C). Line a shallow baking pan with aluminum foil.", 
 "2. Place salmon skin-side down on foil. Spread a thin layer of mustard on the top of each fillet, and season with salt and pepper. Top with bread crumbs, then drizzle with melted butter.",
@@ -77,6 +102,44 @@ Recipe.create(name: "Slow Cooker Baby Back Ribs", image: "https://imagesvc.mered
 Recipe.create(name: "Pesto Cheesy Chicken Rolls", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F570187.jpg&w=858&h=858&c=sc&poi=face&q=85", step: ["1. Preheat the oven to 350 degrees F (175 degrees C). Spray a baking dish with cooking spray.",
 "2. Spread 2 to 3 tablespoons of the pesto sauce onto each flattened chicken breast. Place one slice of cheese over the pesto. Roll up tightly, and secure with toothpicks. Place in a lightly greased baking dish.",
 "3. Bake uncovered for 45 to 50 minutes in the preheated oven, until chicken is nicely browned and juices run clear."])
+
+Recipe.create(name: "S'mores in a Cup", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F1138385.jpg&w=596&h=399&c=sc&poi=face&q=85", step: ["1. Preheat oven to 350 degrees F (175 degrees C). Line 42 miniature muffin tins with paper liners.",
+"2. Mix graham cracker crumbs with butter in a bowl until evenly combined. Spoon graham cracker mixture into the prepared muffin cups, pressing into the bottom and up the sides creating a crust.",
+"3. Place 1 chocolate square onto each crust and top each with 3 miniature marshmallows.",
+"4. Bake in the preheated oven until marshmallows are puffy and chocolate is melted, about 6 minutes."])
+
+Recipe.create(name: "Magical Chocolate Bars", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3664170.jpg&w=596&h=596&c=sc&poi=face&q=85", step: ["1. Line a baking sheet with waxed paper.",
+"2. Remove the lid from ice cream container. Working quickly, cut the container off the ice cream and turn ice cream on its side on a work surface. Insert craft sticks into the side of the ice cream, evenly spacing them. Cut the ice cream between the sticks, creating 3 bars.",
+"3. Arrange ice cream bars in the prepared baking sheet; freeze until completely solid, 8 hours to overnight.",
+"4. Combine chocolate chips and coconut oil in a microwave-safe bowl; heat in microwave in 30-second intervals, mixing well each time, until chocolate hard shell mixture is smooth, 1 to 2 minutes.",
+"5. Hold 1 ice cream bar over a separate measuring cup and pour chocolate hard shell mixture over bar to cover completely. Let chocolate dry for a few seconds and pour chocolate hard shell mixture over bar again, creating a thick shell. Place bar back in the waxed paper. Repeat with remaining bars and chocolate hard shell mixture.",
+"6. Freeze bars until set, at least 15 minutes."])
+
+Recipe.create(name: "Apple Cinnamon Chimichangas", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F4404898.jpg&w=596&h=596&c=sc&poi=face&q=85", step: ["1. Heat apple pie filling in a small pot over medium-low heat until warmed through, about 5 minutes.",
+"2. Place cinnamon sugar in a shallow dish.",
+"3. Spoon 1 1/2 tablespoons of filling onto each tortilla. Fold in opposing edges and roll up as you would a burrito.",
+"4. Heat oil in a large, deep saucepan over medium heat.",
+"5. Place a batch of rolled tortillas seam-side down in the hot oil and fry until browned and crispy, 1 to 2 minutes. Turn and continue frying until all sides are browned, 1 to 2 minutes more. Roll in cinnamon sugar to coat. Repeat with remaining batches."])
+
+Recipe.create(name: "Lemon Curd Tarts", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5404119.jpg&w=596&h=399&c=sc&poi=face&q=85", step: ["1. Spoon about 1 teaspoon lemon curd into the bottom of each phyllo shell; top with whipped topping. Sprinkle a light dusting of cinnamon over the top."])
+
+Recipe.create(name: "Hazelnut Palmiers", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F973461.jpg&w=596&h=596&c=sc&poi=face&q=85", step: ["1. Lay puff pastry flat onto a work surface. Spread chocolate-hazelnut spread over puff pastry and sprinkle with hazelnuts.",
+"2. Starting with a long edge of the pastry, roll pastry tightly around filling, stopping in the middle. Repeat with the opposite long edge, meeting the first roll. Refrigerate until chilled, about 30 minutes.",
+"3. Preheat oven to 450 degrees F (230 degrees C). Line a baking sheet with parchment paper.",
+"4. Cut pastry into 3/4-inch slices. Arrange slices on prepared baking sheet.",
+"5. Bake in preheated oven until golden, 6 to 7 minutes. Flip cookies and continue baking until crisp, 4 to 5 minutes more."])
+
+Recipe.create(name: "Vegan Meringues", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3710975.jpg&w=596&h=596&c=sc&poi=face&q=85", step: ["1. Preheat oven to 210 degrees F (100 degrees C). Line a baking sheet with baking parchment.",
+"2. Drain chickpeas, reserving 1/2 cup liquid from the can. Save the chickpeas for another use. Pour chickpea liquid into a bowl and add the cream of tartar. Beat mixture using an electric mixer until soft peaks form. Gradually add sugar, 1 tablespoon at a time, as you continually beat until glossy peaks form, about 20 minutes; beat in vanilla extract until well incorporated.",
+"3. Spoon mixture into a piping bag and pipe into small circles, about 1 inch in diameter, onto the prepared baking sheet.",
+"4. Bake in the preheated oven until meringues are firm and come away easily from the parchment paper, about 90 minutes. Remove from the oven and allow to cool completely, at least 15 minutes."])
+
+Recipe.create(name: "Macaron (French Macaroon)", image: "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6394086.jpg&q=85", step: ["1. Line a baking sheet with a silicone baking mat.",
+"2. Beat egg whites in the bowl of a stand mixer fitted with a whisk attachment until whites are foamy; beat in white sugar and continue beating until egg whites are glossy, fluffy, and hold soft peaks. Sift confectioners' sugar and ground almonds in a separate bowl and quickly fold the almond mixture into the egg whites, about 30 strokes.",
+"3. Spoon a small amount of batter into a plastic bag with a small corner cut off and pipe a test disk of batter, about 1 1/2 inches in diameter, onto prepared baking sheet. If the disk of batter holds a peak instead of flattening immediately, gently fold the batter a few more times and retest.",
+"4. When batter is mixed enough to flatten immediately into an even disk, spoon into a pastry bag fitted with a plain round tip. Pipe the batter onto the baking sheet in rounds, leaving space between the disks. Let the piped cookies stand out at room temperature until they form a hard skin on top, about 1 hour.",
+"5. Preheat oven to 285 degrees F (140 degrees C).",
+"6. Bake cookies until set but not browned, about 10 minutes; let cookies cool completely before filling."])
 
 
 RecipeIngredient.create(recipe_id: 1, ingredient_id: 1, quantity: "16oz")
@@ -118,19 +181,46 @@ RecipeIngredient.create(recipe_id: 8, ingredient_id: 29, quantity: "16 oz")
 RecipeIngredient.create(recipe_id: 8, ingredient_id: 30, quantity: "1 cup")
 RecipeIngredient.create(recipe_id: 8, ingredient_id: 31, quantity: "6 oz")
 RecipeIngredient.create(recipe_id: 8, ingredient_id: 32, quantity: "1 can")
+RecipeIngredient.create(recipe_id: 9, ingredient_id: 5, quantity: "3/4 cup")
+RecipeIngredient.create(recipe_id: 9, ingredient_id: 33, quantity: "28 oz")
+RecipeIngredient.create(recipe_id: 9, ingredient_id: 34, quantity: "10 oz")
+RecipeIngredient.create(recipe_id: 9, ingredient_id: 35, quantity: "126")
+RecipeIngredient.create(recipe_id: 10, ingredient_id: 36, quantity: "1 pint")
+RecipeIngredient.create(recipe_id: 10, ingredient_id: 37, quantity: "3")
+RecipeIngredient.create(recipe_id: 10, ingredient_id: 38, quantity: "2 cups")
+RecipeIngredient.create(recipe_id: 10, ingredient_id: 39, quantity: "2/3 cup")
+RecipeIngredient.create(recipe_id: 11, ingredient_id: 36, quantity: "21 oz")
+RecipeIngredient.create(recipe_id: 11, ingredient_id: 37, quantity: "1/2 cup")
+RecipeIngredient.create(recipe_id: 11, ingredient_id: 38, quantity: "15")
+RecipeIngredient.create(recipe_id: 11, ingredient_id: 39, quantity: "1 cup")
+RecipeIngredient.create(recipe_id: 12, ingredient_id: 40, quantity: "1/4 cup")
+RecipeIngredient.create(recipe_id: 12, ingredient_id: 41, quantity: "2 oz")
+RecipeIngredient.create(recipe_id: 12, ingredient_id: 42, quantity: "1/2 cup")
+RecipeIngredient.create(recipe_id: 12, ingredient_id: 43, quantity: "1/4 tspn")
+RecipeIngredient.create(recipe_id: 13, ingredient_id: 41, quantity: "1 sheet, thawed")
+RecipeIngredient.create(recipe_id: 13, ingredient_id: 42, quantity: "1 cup")
+RecipeIngredient.create(recipe_id: 13, ingredient_id: 43, quantity: "1/3 cup, chopped")
+RecipeIngredient.create(recipe_id: 14, ingredient_id: 44, quantity: "1 150z can, undrained")
+RecipeIngredient.create(recipe_id: 14, ingredient_id: 45, quantity: "1/4 tspn")
+RecipeIngredient.create(recipe_id: 14, ingredient_id: 46, quantity: "3/4 cup")
+RecipeIngredient.create(recipe_id: 14, ingredient_id: 47, quantity: "1/2 tspn")
+RecipeIngredient.create(recipe_id: 15, ingredient_id: 48, quantity: "3")
+RecipeIngredient.create(recipe_id: 15, ingredient_id: 46, quantity: "1/4 cup")
+RecipeIngredient.create(recipe_id: 15, ingredient_id: 49, quantity: "1 2/3 cup")
+RecipeIngredient.create(recipe_id: 15, ingredient_id: 50, quantity: "1 cup, finely ground")
 
-RecipeList.create(recipe_id: 1, user_id: 1)
-RecipeList.create(recipe_id: 2, user_id: 1)
-RecipeList.create(recipe_id: 3, user_id: 1)
-RecipeList.create(recipe_id: 4, user_id: 1)
-RecipeList.create(recipe_id: 5, user_id: 1)
-RecipeList.create(recipe_id: 8, user_id: 2)
-RecipeList.create(recipe_id: 7, user_id: 2)
-RecipeList.create(recipe_id: 6, user_id: 2)
-RecipeList.create(recipe_id: 5, user_id: 2)
-RecipeList.create(recipe_id: 4, user_id: 2)
-RecipeList.create(recipe_id: 3, user_id: 3)
-RecipeList.create(recipe_id: 4, user_id: 3)
-RecipeList.create(recipe_id: 5, user_id: 3)
-RecipeList.create(recipe_id: 6, user_id: 3)
-RecipeList.create(recipe_id: 7, user_id: 3)
+# RecipeList.create(recipe_id: 1, user_id: 1)
+# RecipeList.create(recipe_id: 2, user_id: 1)
+# RecipeList.create(recipe_id: 3, user_id: 1)
+# RecipeList.create(recipe_id: 4, user_id: 1)
+# RecipeList.create(recipe_id: 5, user_id: 1)
+# RecipeList.create(recipe_id: 8, user_id: 2)
+# RecipeList.create(recipe_id: 7, user_id: 2)
+# RecipeList.create(recipe_id: 6, user_id: 2)
+# RecipeList.create(recipe_id: 5, user_id: 2)
+# RecipeList.create(recipe_id: 4, user_id: 2)
+# RecipeList.create(recipe_id: 3, user_id: 3)
+# RecipeList.create(recipe_id: 4, user_id: 3)
+# RecipeList.create(recipe_id: 5, user_id: 3)
+# RecipeList.create(recipe_id: 6, user_id: 3)
+# RecipeList.create(recipe_id: 7, user_id: 3)
